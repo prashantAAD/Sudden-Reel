@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/log_in_nav_graph"
+    app:startDestination="@id/googleLogInFragment">
+
+    <fragment
+        android:id="@+id/googleLogInFragment"
+        android:name="www.revengerfitness.blogspot.com.sudden_reel.fragments.GoogleLogInFragment"
+        android:label="GoogleLogInFragment" >
+        <action
+            android:id="@+id/action_googleLogInFragment_to_manualLogInFragment"
+            app:destination="@id/manualLogInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manualLogInFragment"
+        android:name="www.revengerfitness.blogspot.com.sudden_reel.fragments.ManualLogInFragment"
+        android:label="ManualLogInFragment" >
+        <action
+            android:id="@+id/action_manualLogInFragment_to_googleLogInFragment"
+            app:destination="@id/googleLogInFragment" />
+        <action
+            android:id="@+id/action_manualLogInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_manualLogInFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="www.revengerfitness.blogspot.com.sudden_reel.fragments.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_manualLogInFragment"
+            app:destination="@id/manualLogInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="www.revengerfitness.blogspot.com.sudden_reel.fragments.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_manualLogInFragment"
+            app:destination="@id/manualLogInFragment" />
+    </fragment>
+</navigation>

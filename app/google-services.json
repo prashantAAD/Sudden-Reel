@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "561056313512",
+    "project_id": "freewebsitehostingdemo19",
+    "storage_bucket": "freewebsitehostingdemo19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561056313512:android:05aaf681603dee33af529d",
+        "android_client_info": {
+          "package_name": "www.revengerfitness.blogspot.com.sudden_reel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561056313512-11eqpc80i62s9kovrehm6gajkksh4v5s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCktMr2SuViYoK3ZFWf8IPx97Fh7bDe1CY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561056313512-11eqpc80i62s9kovrehm6gajkksh4v5s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

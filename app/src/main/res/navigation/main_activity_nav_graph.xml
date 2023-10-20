@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_activity_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="www.revengerfitness.blogspot.com.sudden_reel.fragments.HomeFragment"
+        android:label="HomeFragment">
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="www.revengerfitness.blogspot.com.sudden_reel.fragments.SearchFragment"
+        android:label="SearchFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="www.revengerfitness.blogspot.com.sudden_reel.fragments.AddFragment"
+        android:label="AddFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="www.revengerfitness.blogspot.com.sudden_reel.fragments.NotificationFragment"
+        android:label="NotificationFragment" >
+        <action
+            android:id="@+id/action_notificationFragment_to_ntFollowersFragment"
+            app:destination="@id/ntFollowersFragment" />
+        <action
+            android:id="@+id/action_notificationFragment_to_ntLikesFragment"
+            app:destination="@id/ntLikesFragment" />
+        <action
+            android:id="@+id/action_notificationFragment_to_ntCommentsFragment"
+            app:destination="@id/ntCommentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="www.revengerfitness.blogspot.com.sudden_reel.fragments.ProfileFragment"
+        android:label="ProfileFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/ntFollowersFragment"
+        android:name="www.revengerfitness.blogspot.com.sudden_reel.fragments.NtFollowersFragment"
+        android:label="NtFollowersFragment" >
+        <action
+            android:id="@+id/action_ntFollowersFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ntLikesFragment"
+        android:name="www.revengerfitness.blogspot.com.sudden_reel.fragments.NtLikesFragment"
+        android:label="NtLikesFragment" />
+    <fragment
+        android:id="@+id/ntCommentsFragment"
+        android:name="www.revengerfitness.blogspot.com.sudden_reel.fragments.NtCommentsFragment"
+        android:label="NtCommentsFragment" >
+        <action
+            android:id="@+id/action_ntCommentsFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+
+</navigation>
